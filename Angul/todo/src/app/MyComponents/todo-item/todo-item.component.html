@@ -1,0 +1,20 @@
+<div class="mb-3" id="responsive">
+    <div style="overflow-wrap:break-word; width: 80px;">
+        <h4 [class]="todo.active?'not-strike':'strike'">{{todo.title}}</h4>
+    </div>
+    <div style="overflow-wrap:break-word;width: 350px;" class="text-center">
+        <p>{{todo.desc}}</p>
+    </div>
+    <div style="width: 150px ;" class="mb-3 form-check">
+
+        <input *ngIf="this.todo.active;else checked" type="checkbox" class="form-check-input" id="exampleCheck1"
+            (click)="onCheckbox(todo)">
+        <ng-template #checked>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="onCheckbox(todo)" checked>
+        </ng-template>
+
+
+        <label class="form-check-label" for="exampleCheck1">{{todo.active?'Not completed':'Completed'}}</label>
+    </div>
+    <button style="max-height:40px ;" class="btn btn-danger" (click)="onClick(todo)">Delete</button>
+</div>

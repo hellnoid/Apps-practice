@@ -1,0 +1,17 @@
+.strike {
+  text-decoration: line-through;
+}
+.not-strike {
+  text-decoration: none;
+}
+
+#responsive {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 510px) {
+  #responsive {
+    display: block;
+  }
+}
