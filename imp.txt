@@ -1,0 +1,64 @@
+Directives
+Pipe
+Components
+Routing
+Modules
+Services/Provider
+Observable
+Promises
+
+===================IONIC imp Cmds+++++++++++++++++++
+
+project version 3  :ionic start helloWorld blank --type=ionic-angular
+vs code compatibility:    npm config set msvs_version 2017
+NPM force install:   npm i -f
+
+
+ionic start
+
+ionic serve
+
+ionic cordova build android
+
+ionic cordova run android
+
+ionic cordova build ios
+
+ionic cordova platform add android
+
+ionic cordova platform rm android
+
+
+
+=======================================GIT / Git HUB===========================================
+command                                                     functions
+
+mkdir 'foldername'                           => make directory , used to make folder 
+git --version                                => to find version name
+cd                                           => change directory
+git config --global user.name "username"     => set user name
+git config --global user.email "e-mail"      => set email ID
+git config --global --edit                   => to edit the config info
+git init                                     => this cmd is used to make git repo, use this cmd in the directory/folder u want to make the repo
+ls                                           => list of files in folder
+ls -a                                        => list of files git is keeping track of
+git status                                   => to the details of the git repo
+git add "filename"                           => adds the file to the staging area
+git commit -m "anything"                     => commits files in the staging to the repo
+git log                                      => to see the history of commits
+TIME TRAVELLING==================>
+git checkout "commit wala code"              => commit wala code (jo 'git log' me aata hai), this command will take you to that state of the repo when that commit was made
+git checkout "branch name"                   => to switch different branches
+git revert 'commitid'                        => reverts back to that state
+
+git branch "branchname"                      => to create new branch of the given name
+git branch                                   => to see the list of all branches and the branch u are present in
+git checkout -b "branchname"                 => to switch to a branch after creating it
+git merge "branchname"                       => to merge two branches
+
+To ADD LOCAL REPO TO THE GIT HUB =>
+git remote -v                                => to check status of remote
+git remote add origin 'url from github'
+git branch -M master
+git push -u origin master             
+(-u is used to push a branch)
